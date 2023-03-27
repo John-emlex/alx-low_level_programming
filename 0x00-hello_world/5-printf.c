@@ -2,6 +2,8 @@
 /**
  * main - Entry point
  *
+ * Decription: 'proper grammar'
+ *
  * Return : Always 0 (Success)
  */
 int main(void)
