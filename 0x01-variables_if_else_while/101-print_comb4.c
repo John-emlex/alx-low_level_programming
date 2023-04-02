@@ -8,29 +8,30 @@
 
 int main(void)
 {
-	int n, m, l;
 
-	for (n = 0; n < 8; n++)
-	{
+	int d, p, q;
 
-		for (m = n + 1; m < 9; m++)
+	for (d = '0'; d < '9'; d++)
 	{
 
-		for (l = n + 1; l <= 9 ; l++)
+	for (p = d + 1; p <= '9'; p++)
 	{
-		if ((m != n) != l)
+
+	for (q = p + 1; q <= '9'; q++)
 	{
-		putchar((n % 10) + '0');
-		putchar((m % 10) + '0');
-		putchar((l % 10) + '0');
-		if (n == 7 && m == 8 && l == 9)
-			continue;
-		putchar(',');
-		putchar(' ');
+	if ((p != d) != q)
+	{
+	putchar(d);
+	putchar(p);
+	putchar(q);
+	if (d == '7' && p == '8')
+	continue;
+	putchar(',');
+	putchar(' ');
 	}
 	}
 	}
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
