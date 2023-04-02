@@ -1,21 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
-/* main - c programming */
+#include <stdio.h>
 
-/* Return: Always 0 (Success */
+/**
+ * main - Prints the alphabet in lowercase, except for q and e.
+ *
+ * Return: Always 0.
+ */
+
 int main(void)
-
 {
-	int i;
+	char letter;
 
-	for (i = 97; i < 123; i++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		if (i != 101 && i != 113)
-		{
-			putchar(i);
-		}
+		if (letter != 'e' && letter != 'q')
+			putchar(letter);
 	}
 
-	putchar("\n");
+	putchar('\n');
+
 	return (0);
 }
